@@ -62,6 +62,11 @@ public class LibraryServiceImpl implements LibraryService{
     }
 
     @Override
+    public Buku buku(String buku) {
+        return null;
+    }
+
+    @Override
     public Buku caribuku(String buku) {
         return new Buku(buku);
     }

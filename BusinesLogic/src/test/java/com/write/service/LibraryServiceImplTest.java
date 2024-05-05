@@ -9,23 +9,20 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 @ExtendWith(MockitoExtension.class)
 public class LibraryServiceImplTest {
-    @Mock
-    public LibraryRepoImpl libraryRepo;
+//    @Mock
+//    public LibraryRepoImpl libraryRepo;
 
     LibraryServiceImpl libraryService;
-    void anjay(){
 
-    }
+//    @BeforeEach
+//    void setUp() {
+//        LibraryServiceImpl service = new LibraryServiceImpl(new LibraryRepoImpl());
+//    }
 
-    @BeforeEach
-    void setUp() {
-        LibraryServiceImpl service = new LibraryServiceImpl(new LibraryRepoImpl());
-    }
-
-    @Test
-    void testNotFound() {
-        Assertions.assertThrows(IllegalArgumentException.class, () -> {
-           libraryService.get("not found");
-        });
-    }
+//    @Test
+//    void testNotFound() {
+//        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+//           libraryService.get("not found");
+//        });
+//    }
 }

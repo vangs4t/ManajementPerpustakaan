@@ -11,6 +11,15 @@ public class LibraryServiceImpl implements LibraryService{
         this.repo = repo;
     }
 
+    public Buku get(String judul){
+        var buku = repo.selectBook(judul);
+        if (buku != null){
+            return buku;
+        } else {
+            throw new IllegalArgumentException("Buku tidak ditemukan");
+        }
+    }
+
     @Override
     public ArrayList<Buku> getLibrary() {
         return repo.getAll();

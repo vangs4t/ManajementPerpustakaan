@@ -37,6 +37,11 @@ public class LibraryRepoImpl implements LibraryRepo{
     public void remove(Integer isbn) {
         data.remove(isbn - 1);
     }
+
+    @Override
+    public Buku selectBook(String judul) {
+        return null;
+    }
 }
 
 

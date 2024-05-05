@@ -12,4 +12,6 @@ public interface LibraryRepo {
     String search(String judul);
 
     void remove(Integer isbn);
+
+    Buku selectBook(String judul);
 }
